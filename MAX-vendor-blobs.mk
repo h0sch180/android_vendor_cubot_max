@@ -20,7 +20,5 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/CUBOT/MAX/vendor/li
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/CUBOT/MAX/vendor/lib/mediadrm,system/vendor/lib/mediadrm)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/CUBOT/MAX/vendor/lib64/mediadrm,system/vendor/lib64/mediadrm)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/CUBOT/MAX/xbin,system/xbin)
 
