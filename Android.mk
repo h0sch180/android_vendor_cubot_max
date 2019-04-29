@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-
+ifneq ($(filter MAX, $(TARGET_DEVICE)),)
 $(info copying SHARED proprietary blobs)
 
 include $(CLEAR_VARS)
@@ -56,3 +56,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
+endif
